@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+           "@restConstants/*":["API/REST/constants/*"],
+           "@asserts/*":["framework/playwright/asserts/*"],
+           "@uiActions/*":["framework/playwright/actions/*"],
+           "@apiActions/*":["framework/playwright/API/*"],
+           "@utils/*":["framework/utils/*"],
+           "@allure":["framework/reporter/Allure"],
+           "@base-test":["framework/config/base-test"],
+           "@dbSteps/*":["database/steps/*"],
+           "@uiSteps/*":["advantage/steps/*"],
+           "@restSteps/*":["API/REST/steps/*"],
+        },
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "sourceMap": true,
+        "outDir": "../tests-out",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+    }
+}

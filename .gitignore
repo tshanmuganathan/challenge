@@ -41,6 +41,10 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+/node_modules
+node_modules
+**/*.test.ts
+/.vscode
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -128,3 +132,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#intellij generated files
+.idea
+
+#results dir
+test-results
+/test-results
+/allure-results
+/allure-report
+
+
+
+
