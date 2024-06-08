@@ -9,8 +9,6 @@
            "@utils/*":["framework/utils/*"],
            "@allure":["framework/reporter/Allure"],
            "@base-test":["framework/config/base-test"],
-           "@dbSteps/*":["database/steps/*"],
-           "@uiSteps/*":["advantage/steps/*"],
            "@restSteps/*":["API/REST/steps/*"],
         },
         "target": "ESNext",
