@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
     headless: false,
     channel: Browser.channel(process.env.BROWSER.toLowerCase()),
     launchOptions: {
-      args: ["--start-maximized", "--disable-extensions", "--disable-plugins"],
+      args: ["--start-maximized", "--disable-extensions", "--disable-plugins", "--deny-permission-prompts"],
       headless: false,
       timeout: Number.parseInt(process.env.BROWSER_LAUNCH_TIMEOUT, 10),
       slowMo: 100,

@@ -10,6 +10,9 @@
            "@allure":["framework/reporter/Allure"],
            "@base-test":["framework/config/base-test"],
            "@restSteps/*":["API/REST/steps/*"],
+           "@uiSteps/*":["web_application/steps/*"],
+           "@pages/*":["web_application/pages/*"],
+           "@uiConstants/*":["web_application/constants/*"]
         },
         "target": "ESNext",
         "module": "CommonJS",
