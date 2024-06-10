@@ -74,3 +74,9 @@ Execution log will be present in the log file.
 ```sh
 test-results/logs/execution.log
 ```
+
+##### 5. GH Pipeline
+Github workflow steps are  mentioned in the below path.
+```sh
+.github/workflows/node.js.yml
+```
