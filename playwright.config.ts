@@ -7,9 +7,9 @@ dotenv.config();
 const timeInMin: number = 60 * 1000;
 const config: PlaywrightTestConfig = {
   use: {
-    browserName: Browser.type(process.env.BROWSER.toLowerCase()),
+    browserName: Browser.type(process.env.BROWSER),
     headless: false,
-    channel: Browser.channel(process.env.BROWSER.toLowerCase()),
+    channel: Browser.channel(process.env.BROWSER),
     launchOptions: {
       args: ["--start-maximized", "--disable-extensions", "--disable-plugins", "--deny-permission-prompts"],
       headless: false,
