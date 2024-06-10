@@ -27,3 +27,14 @@ test(`TC002 - Verify Available Chargers`, async ({ page }) => {
     await Assert.assertEquals(await home.getCurrentUrl(), "https://energy.ampol.com.au/sign-up/postcode", "Verify the Current URL");
 });
 
+
+//UI - Scenario B - Partially complete.
+test(`TC003 - View Energy Plans and Intercept Traffic`, async ({ page }) => {
+    Allure.attachDetails('View Energy Plans and Intercept Traffic', 'TC003');
+    let energyHomeSteps = new EnergyHomeSteps(page);
+    await energyHomeSteps.launchApplication();
+    await energyHomeSteps.clickSwitchNow();
+    await energyHomeSteps.searchByPostCode('4011', 'Clayfield');
+    await energyHomeSteps.clickViewPlansButton();
+
+});

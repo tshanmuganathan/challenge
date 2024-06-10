@@ -11,6 +11,14 @@ export default class ChargeHomeSteps {
     }
 
     /**
+     * Launch the Application
+     */
+    public async launchApplication() {
+        await test.step(`Launching the application`, async () => {
+            await this.ui.goto(process.env.CHARGE_BASE_URL, "Navigating to Charge Base URL");
+        });
+    }
+    /**
      * Navigate to Find Charging Location screen
      */
     public async navigateToFindChargingLocation() {
@@ -30,6 +38,7 @@ export default class ChargeHomeSteps {
             await this.ui.editBox(ChargeHomePage.LOCATION_SEARCH_TEXT_BOX, ChargeHomePage.LOCATION_SEARCH_TEXT_BOX).type(evLocation);
             await this.page.isVisible(ChargeHomePage.FUZZY_LOGIC_SEARCH_FIRST_RESULT);
             await this.ui.editBox(ChargeHomePage.FUZZY_LOGIC_SEARCH_FIRST_RESULT, ChargeHomePageConstants.FUZZY_LOGIC_SEARCH_FIRST_RESULT).click();
+            await this.page.isVisible(ChargeHomePage.EV_CHARGING_PORTLET);
         });
     }
     /**
