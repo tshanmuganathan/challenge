@@ -2,6 +2,7 @@
 
 ## **Overview:**
 This is an Automation project using Playwright and Typescript and uses playwright-testrunner to execute test cases. 
+This project is enabled with GH Actions CI/CD.
 
 ## **Overall progress:**
 | Test                         | Status   |
