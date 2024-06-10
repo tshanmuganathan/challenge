@@ -41,8 +41,8 @@ const config: PlaywrightTestConfig = {
       detail: false,
       suiteTitle: false,
       environmentInfo: {
-        OS: process.platform.toUpperCase(),
-        BROWSER: process.env.BROWSER.toUpperCase(),
+        OS: process.platform,
+        BROWSER: process.env.BROWSER,
         BASE_URL: process.env.BASE_URL,
       },
     }],
