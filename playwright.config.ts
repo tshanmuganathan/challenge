@@ -20,8 +20,8 @@ const config: PlaywrightTestConfig = {
     viewport: null,
     ignoreHTTPSErrors: true,
     acceptDownloads: true,
-    actionTimeout: Number.parseInt(process.env.ACTION_TIMEOUT, 10) * timeInMin,
-    navigationTimeout: Number.parseInt(process.env.NAVIGATION_TIMEOUT, 10) * timeInMin,
+    actionTimeout: 60000,
+    navigationTimeout: 60000,
     screenshot: { 
       mode: "only-on-failure",
       fullPage: true,
@@ -30,11 +30,11 @@ const config: PlaywrightTestConfig = {
   },
   testDir: "./src/tests",
   outputDir: "./test-results/failure",
-  retries: Number.parseInt(process.env.RETRIES, 10),
+  retries: 0,
   preserveOutput: "failures-only",
   reportSlowTests: null,
-  timeout: Number.parseInt(process.env.TEST_TIMEOUT, 10) * timeInMin,
-  workers: Number.parseInt(process.env.PARALLEL_THREAD, 10),
+  timeout: 1200000,
+  workers: 3,
   reporter: [
     ["dot"],
     ["allure-playwright", {
