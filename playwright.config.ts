@@ -58,7 +58,7 @@ const config: PlaywrightTestConfig = {
   projects: [  
     {
       name: "local",
-      testMatch: `*${process.env.TEST_NAME.trim()}*`,
+      testMatch: `*${process.env.TEST_NAME}*`,
     },
     {
       name: "suite",
