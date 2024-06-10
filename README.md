@@ -10,6 +10,7 @@ This project is enabled with GH Actions for CI/CD.
 | Part 1: API Test             | Complete |
 | Part 2: UI test (Scenario A) | Complete |
 | Part 2: UI test (Scenario B) | Partial  |
+| CI Pipeline using GH Actions | Complete |
 
 #### Steps to use
 ##### 1. Installation
