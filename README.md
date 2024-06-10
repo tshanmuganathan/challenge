@@ -82,3 +82,4 @@ Github workflow steps are  mentioned in the below path.
 ```sh
 .github/workflows/node.js.yml
 ```
+**NOTE:** Please note that one of the tests is failing when executed via GH actions as browser not getting maximized even though browser maximize is specified in the playwright configuration and it maximizes as expected during the local executions.
